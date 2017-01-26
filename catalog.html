@@ -7,7 +7,7 @@
   <body>
     <header class="main_header">
       <div class="container">
-        <div class="logo"><img src="#" alt="Логотип"></div>
+        <div class="logo"><img src="img/nerds-logo.png" alt="Логотип"></div>
         <nav class="main_nav">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -28,14 +28,14 @@
       <form class="settings">
         <div class="cost">
           <b>СТОИМОСТЬ:</b>
-          <div clas="rage">
+          <div class="range">
             <div>
             </div>
           </div>
-          ОТ
-          <input type="text" value="0">
-          ДО
-          <input type="text" value="15000">
+          <label for="range_from">ОТ</label>
+          <input type="text" id="range_from" value="0">
+          <label for="range_to">ДО</label>
+          <input type="text" id="range_from" value="15000">
         </div>
         <div class="grid">
           <b>СЕТКА</b>
@@ -152,7 +152,7 @@
           NERDS DESIGN STUDIO
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
-        <a href="tel:+7 (812) 666-02-66">Телефон: +7 (812) 666-02-66</a>
+        <a href="tel:+7(812)666-02-66">Телефон: +7 (812) 666-02-66</a>
       </div>
     </div>
     <footer class="footer_social">
@@ -162,17 +162,17 @@
         <a class="social_btn social_inst" href="#">Инстаграм</a>
       </div>
       <div class="discount">
-        <p><b>Давайте дружить, это выгодно!</b>
-          Скидка 10% для друзей из социальных сетей.</p>
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <div class="write_us">
       <h1>Напишите нам</h1>
       <button class="close_window">Close</button>
       <form>
-        <label>Ваше имя:<input type="text" value="Представтесь, пожалуйста"></label>
-        <label>Ваш e-mail:<input type="text" value="Для отправки ответа"></label>
-        <label>Текст письма:<input type="textarea" value="В свободной форме"></label>
+        <label for="name">Ваше имя:<input type="text" id="name" placeholder="Представтесь, пожалуйста"></label>
+        <label for="e-mail">Ваш e-mail:<input type="text" id="e-mail" placeholder="Для отправки ответа"></label>
+        <label for="text">Текст письма:<textarea id="text" placeholder="В свободной форме"></textarea></label>
         <input type="submit">
       </form>
     </div>
