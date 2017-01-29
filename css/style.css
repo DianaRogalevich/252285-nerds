@@ -1,10 +1,118 @@
-body {
+ body {
+  min-width:1200px;
+  min-height:2400px;
+  margin:0;
+  padding:0 20px;
+}
+p{
+  
   font-family: Roboto;
   font-weight: normal;
   line-height: 24px;
   font-size: 16px;
   color:black; 
+  
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width:1200px;
+  margin:0 auto;
+  padding:0px 120px;
+}
+.logo{
+  float:left;
+  width:220px;
+   margin-top: 45px;
+}
+.main_nav{
+  float:left;
+  width: 440px;
+  margin-left:160px; 
+   margin-top: 45px;
+}
+.user_menu{
+  float:right;
+  width:180px;
+   margin-top: 45px;
+}
+.main_header{
+  margin-bottom: 0;
+}
+.slider{
+  width:1200px;
+  margin:0 auto;
+  padding: 0 120px;
+  padding-top: 45px;
+}
+.slider_item{
+  width:360px;
+  float:left;
+  margin-right: 20px;
+}
+.offers{/* Схлопнулся, clearfix не сработал*/
+  margin-top: 75px;
+  margin-bottom: 80px;  
+}
+.offers_item{
+  width:300px;
+  float:left;
+   margin-right: 100px;
+}
+.offers_item:first-child{
+  margin-left: 20px;
+}
+.offers_item:last-child{
+   margin-right: 80px;
+}
+
+.about_us{
+  clear:both;
+  min-height: 525px;
+
+}
+.about_us_left{
+  float:left;
+  width:660px;
+  margin-left:20px;
+  
+}
+.about_us_right{
+  float:right;
+  width:360px;
+  margin-right:20px;
+  
+}
+.costomers_gallery{/* Схлопнулся, clearfix не сработал*/
+  clear:both;
+}
+.costomers_gallery a{
+  min-height: 180px;
+  float:left;
+  width:260px;
+  margin-right: 40px; 
+}
+.costomers_gallery a:first-child{
+  margin-left:20px;
+}
+.costomers_gallery a:last-child{
+  margin-right:20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .slider_item h2 {
   font-family: Roboto;
@@ -21,4 +129,19 @@ body {
   font-size: 24px;
   color:black;
   text-transform: uppercase;  
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------*/
+div, article, header, footer, section, a, p, nav {
+outline: 1px solid red;
 }

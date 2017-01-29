@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="css/Normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main_header">
-      <div class="container">
-        <div class="logo"><img src="img/nerds-logo.png" alt="Логотип"></div>
+      <div class="container clearfix">
+        <a class="logo" href="#"><img src="img/nerds-logo.png" alt="Логотип"></a>
         <nav class="main_nav">
           <ul>
             <li><a href="#">Студия</a></li>
@@ -24,8 +26,8 @@
         <h2>Магазин готовых шаблонов</h2>
       </div>
     </header>
-    <main class="container">
-      <form class="settings">
+    <main class="container clearfix">
+      <form class="settings" method="get">
         <div class="cost">
           <b>СТОИМОСТЬ:</b>
           <div class="range">
@@ -63,11 +65,11 @@
       <section class="gallery">
         <div class="gallery_settings">
           <b>СОРТИРОВАТЬ:</b>
-          <button class="price_sort">по цене</button>
-          <button class="type_sort">по типу</button>
-          <button class="name_sort">по названию</button>
-          <button class="up">вверх</button>
-          <button class="down">вниз</button>
+          <a class="price_sort">по цене</a>
+          <a class="type_sort">по типу</a>
+          <a class="name_sort">по названию</a>
+          <a class="up">вверх</a>
+          <a class="down">вниз</a>
         </div>
         <div class="gallery_items">
           <article class="item">
@@ -155,7 +157,7 @@
         <a href="tel:+7(812)666-02-66">Телефон: +7 (812) 666-02-66</a>
       </div>
     </div>
-    <footer class="footer_social">
+    <footer class="container clearfix social">
       <div class="social_btn">
         <a class="social_btn social_vk" href="#">Вконтакте</a>
         <a class="social_btn social_fb" href="#">Фейсбук</a>
