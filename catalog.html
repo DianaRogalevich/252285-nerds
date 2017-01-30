@@ -7,23 +7,25 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main_header">
+    <header class="header_content">
       <div class="container clearfix">
-        <a class="logo" href="#"><img src="img/nerds-logo.png" alt="Логотип"></a>
-        <nav class="main_nav">
-          <ul>
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>  
-          </ul>
-        </nav>
-        <div class="user_menu">
-          <a href="#">Корзина</a>
+        <div class="main_header clearfix">
+          <div class="logo"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип"></div>
+          <nav class="main_nav">
+            <ul>
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>  
+            </ul>
+          </nav>
+          <div class="user_menu">
+            <a href="#">Корзина</a>
+          </div>
         </div>
-      </div>
-      <div class="header">
+      <div class="second_header">
         <h2>Магазин готовых шаблонов</h2>
+      </div>
       </div>
     </header>
     <main class="container clearfix">
@@ -65,13 +67,15 @@
       <section class="gallery">
         <div class="gallery_settings">
           <b>СОРТИРОВАТЬ:</b>
-          <a class="price_sort">по цене</a>
-          <a class="type_sort">по типу</a>
-          <a class="name_sort">по названию</a>
-          <a class="up">вверх</a>
-          <a class="down">вниз</a>
+          <div class="sort">
+            <a class="price_sort">по цене</a>
+            <a class="type_sort">по типу</a>
+            <a class="name_sort">по названию</a>
+            <a class="down">down</a>
+            <a class="up">up</a>
+          </div>
         </div>
-        <div class="gallery_items">
+        <div class="gallery_items clearfix">
           <article class="item">
             <div class="header_item">
             </div>
@@ -147,8 +151,8 @@
         <a href="#">Следующая</a>
       </div>
     </main>
-    <div class="map">
-      <div class="map_item"></div>
+    <div class="map clearfix">
+      <div class="map_item clearfix"></div>
       <div class="map_contacts">
         <p>
           NERDS DESIGN STUDIO
@@ -168,7 +172,7 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <div class="write_us">
+    <div class="write_us clearfix">
       <h1>Напишите нам</h1>
       <button class="close_window">Close</button>
       <form>
