@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link href="css/Normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -15,30 +16,30 @@
             <ul>
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
-              <li><a href="#">Магазин</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
               <li><a href="#">Контакты</a></li>  
             </ul>
           </nav>
           <div class="user_menu">
-            <a href="#">Корзина</a>
+            <a class="user_buy" href="#">Корзина</a>
           </div>
         </div>
         <div class="slider">
-          <div class="slider_item">
-            <h2> Долго, дорого, скрупулезно.</h2>
+          <div class="slider_background"><div class="slider_item">
+            <h2 class="slider_item_title"> Долго, дорого, скрупулезно.</h2>
             <p>Математически выверенный дизайн для вашего сайта или приложения.</p>
             <a href="#" class="btn">Узнать больше</a>
-          </div>
-          <div class="slider_item">
-            <h2> Любим математику как никто другой.</h2>
+          </div></div>
+          <div class="slider_background"><div class="slider_item">
+            <h2 class="slider_item_title"> Любим математику как никто другой.</h2>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a href="#" class="btn">Узнать больше</a>
-          </div>
-          <div class="slider_item">
-            <h2> Только ночь, только хардкор.</h2>
+            </div></div>
+          <div class="slider_background"><div class="slider_item">
+            <h2 class="slider_item_title"> Только ночь, только хардкор.</h2>
             <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a href="#" class="btn">Узнать больше</a>
-          </div>
+            </div></div>
         </div>
       </div>
     </header>
@@ -46,23 +47,27 @@
       <section class="offers clearfix">
         <div class="offers_item">
           <img src="img/illustration-1.jpg" alt="Сайты">
-          <h2>веб-сайты</h2>
+          <h2 class="offers_title">веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="#" class="btn">Заказать</a>
         </div>
         <div class="offers_item">
           <img src="img/illustration-2.jpg" alt="Приложения">
-          <h2>приложения</h2>
+          <h2 class="offers_title">приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#" class="btn">Заказать</a>
         </div>
         <div class="offers_item">
           <img src="img/illustration-3.jpg" alt="Презентации">
-          <h2>презентации</h2>
+          <h2 class="offers_title">презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a href="#" class="btn">Заказать</a>
         </div>
       </section>
       <div class="about_us clearfix">
         <div class="about_us_left">
-          <p><b> Мы - маленькая, но гордая дизайн-студия из Краснодара.</b> Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+         <h4 class="about_us_title"> Мы - маленькая, но гордая дизайн-студия из Краснодара.</h4> 
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <h6>выполняем заказы на разработку:</h6>
           <p>
             Веб-сайтов любой сложности
@@ -71,49 +76,49 @@
           </p>
         </div>
          <div class="about_us_right">
-          <img src="#">
           <h6>с 2014 года любим точность во всем:</h6>
           <div class="features">
             <div class="features_item">
               <p>
-                <span>146</span>
+                <span class="percent">146</span>
                 <sup>%</sup>
-                Уровень самоотдачи
+                <span>Уровень самоотдачи</span>
               </p>
             </div>
             <div class="features_item">
               <p>
-                <span>100</span>
+                <span class="percent">100</span>
                 <sup>%</sup>
-                Соблюдение сроков
+                <span>Соблюдение сроков</span>
               </p>
             </div>
             <div class="features_item">
               <p>
-                <span>50</span>
+                <span class="percent">50</span>
                 <sup>%</sup>
-                Минимальная предоплата
+                <span>Минимальная предоплата</span>
               </p>
             </div>
            </div>
         </div>
       </div>
       <div class="costomers_gallery clearfix">
-          <a href="#"><img src="#" alt="Htmlacademy"></a>
-          <a href="#"><img src="#" alt="Barbershop Бородинский"></a>
-          <a href="#"><img src="#" alt="PINK"></a>
-          <a href="#"><img src="#" alt="MISHKA"></a>
+          <a href="#">Htmlacademy</a>
+          <a href="#">Barbershop Бородинский</a>
+          <a href="#">PINK</a>
+          <a href="#">MISHKA</a>
       </div>
     </main>
-    <div class="map clearfix">
-      <div class="map_item clearfix"></div>
+    <div class="map">
       <div class="map_contacts">
-        <p>
-          NERDS DESIGN STUDIO
+        <div><p>
+          <span class="map_contacts_title">NERDS DESIGN STUDIO</span>
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </p>
-        <a href="tel:+7(812)666-02-66">Телефон: +7 (812) 666-02-66</a>
-      </div>
+             </p>
+        <a href="tel:+7(812)666-02-66" class="phone_number">тел. +7 (812) 666-02-66</a>
+        </div>
+        <a href="#write_us" class="map_contacts_btn btn">Напишите нам</a>
+        </div>
     </div>
     <footer class="container clearfix social">
       <div class="social_btn">
@@ -126,14 +131,19 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <div class="write_us clearfix">
+    <div class="write_us clearfix" id="write_us">
       <h1>Напишите нам</h1>
       <button class="close_window">Close</button>
       <form>
-        <label for="name">Ваше имя:<input type="text" id="name" placeholder="Представтесь, пожалуйста"></label>
-        <label for="e-mail">Ваш e-mail:<input type="text" id="e-mail" placeholder="Для отправки ответа"></label>
-        <label for="text">Текст письма:<textarea id="text" placeholder="В свободной форме"></textarea></label>
-        <input type="submit">
+        <div class="form_element"><label class="write_us_name"  for="name">Ваше имя:</label>
+        <input type="text" id="name" placeholder="Представтесь, пожалуйста">
+        </div>
+        <div class="form_element"><label class="write_us_e-mail" for="e-mail">Ваш e-mail:</label>
+        <input  type="text" id="e-mail" placeholder="Для отправки ответа"></div>
+        <div class="form_element"><label class="write_us_message" for="message">Текст письма:</label>
+        <textarea  id="message" placeholder="В свободной форме"></textarea>
+        </div>
+        <input type="submit" class="write_us_btn btn">
       </form>
     </div>
   </body>
