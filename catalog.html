@@ -16,7 +16,7 @@
             <ul>
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
+              <li><a class="active">Магазин</a></li>
               <li><a href="#">Контакты</a></li>  
             </ul>
           </nav>
@@ -154,16 +154,16 @@
     </main>
     <div class="map">
       <div class="map_contacts">
-        <div><p>
+        <div>
           <span class="map_contacts_title">NERDS DESIGN STUDIO</span>
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
              </p>
-        <a href="tel:+7(812)666-02-66" class="phone_number">тел. +7 (812) 666-02-66</a>
+        <a href="tel:+7(812)275-75-75" class="phone_number">тел. +7 (812) 275-75-75</a>
         </div>
         <a href="#write_us" class="map_contacts_btn btn">Напишите нам</a>
         </div>
     </div>
-    <footer class="container clearfix social">
+     <footer class="container clearfix social">
       <div class="social_btn">
         <a class="social_btn social_vk" href="#">Вконтакте</a>
         <a class="social_btn social_fb" href="#">Фейсбук</a>
@@ -174,18 +174,22 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <div class="write_us clearfix">
+    <div class="write_us clearfix" id="write_us">
+      <div class="center_form">
       <h1>Напишите нам</h1>
       <button class="close_window">Close</button>
       <form>
-        <label class="write_us_name"  for="name">Ваше имя:</label>
+        <div class="form_element"><label class="write_us_name"  for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Представтесь, пожалуйста">
-        <label class="write_us_e-mail" for="e-mail">Ваш e-mail:</label>
-        <input  type="text" id="e-mail" placeholder="Для отправки ответа">
-        <label class="write_us_message" for="message">Текст письма:</label>
-        <textarea  id="message" placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="form_element"><label class="write_us_e-mail" for="e-mail">Ваш e-mail:</label>
+        <input  type="text" id="e-mail" placeholder="Для отправки ответа"></div>
+        <div class="form_element"><label class="write_us_message" for="message">Текст письма:</label>
+        <textarea  id="message" placeholder="В свободной форме" rows="6" ></textarea>
+        </div>
         <input type="submit" class="write_us_btn btn">
       </form>
+        </div>
     </div>
   </body>
 </html>
