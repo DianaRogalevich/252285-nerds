@@ -972,43 +972,11 @@ background-color: #eeeeee;
   background-image: url(../img/header_item.png);
   opacity: 0.12;
 }
-.gallery_item_image:nth-child(1){
-  width:360px;
-  height:576px;
-  
-  background-image: url(../img/img-sedona.jpg);
-}
-.gallery_item_image:nth-child(2){
-  width:360px;
-  height:576px;
-  
-  background-image: url(../img/img-pink.jpg);
-}
-.gallery_item_image:nth-child(3){
-  width:360px;
-  height:576px;
-  
-  background-image: url(../img/img-barbershop.jpg);
-}
-.gallery_item_image:nth-child(4){
-  width:360px;
-  height:576px;
-  
-  background-image: url(../img/img-mishka.jpg);
-}
-.gallery_item_image:nth-child(5){
-  width:360px;
-  height:576px;
-  
-  background-image: url(../img/img-aplus.jpg);
-}
-.gallery_item_image:nth-child(6){
-  width:360px;
-  height:576px;
-  
-  background-image: url(../img/img-kvast.jpg);
+.gallery_item_image{
+ line-height: 0;
 }
 .buy_block{
+  display: none;
   content:"";
   position: absolute;
   
