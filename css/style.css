@@ -270,7 +270,7 @@
 .offers_item p{
   margin-top:0;
   padding-top:15px;
-  padding-right:15px;
+  padding-right:19px;
   margin-bottom: 32px;
   
   
@@ -1103,6 +1103,12 @@ text-align: center;
   
   border: 4px solid #eeeeee;
   background-color: #ffffff;
+  color:#000000;
+}
+.current_page:hover{
+  background-color: #dfdfdf;
+  border-color:#dfdfdf;
+  color:#000000;
 }
 .next_btn{
   margin-top:0;
