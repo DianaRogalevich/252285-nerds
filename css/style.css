@@ -107,7 +107,8 @@
   content:"";
   position:absolute;
   
-  background-image: url(../img/cart-icon.png);
+  background-image: url(../img/sprite.png);
+  background-position: -0px -153px;
   width:15px;
   height:15px;
   top: 32px;
@@ -212,7 +213,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto";
+  font-family: "Roboto","Arial", sans-serif;
   vertical-align: top;
   text-align: center;
   color:#ffffff ;
@@ -393,6 +394,8 @@
 }
 sup{
   font-size:30px;  
+  font-weight: 700;
+  line-height: 27px;
 }
 .features{
   margin-top:0;
@@ -402,6 +405,8 @@ sup{
   display:inline-block;
   width:110px;
   margin-right:5px;
+  
+  vertical-align: baseline;
 }
 .features_item_comment{
   margin-top:17px;
@@ -447,10 +452,10 @@ sup{
 .costomers_gallery a:hover::after{
   opacity: 0.2;
 }
-.costomers_gallery a:last-child::after{
+.costomers_gallery a:nth-child(4n)::after{
  display:none;
 }
-.costomers_gallery a:last-child{
+.costomers_gallery a:nth-child(4n){
   margin-right:0px; 
 }
 
@@ -481,6 +486,7 @@ sup{
   font-weight: 700;
   letter-spacing: normal;
   text-transform: uppercase;
+  vertical-align: baseline;
   color:#000000;
 }
 .map_contacts p{
@@ -492,6 +498,7 @@ sup{
 }
 .phone_number{
 display: inline-block;
+  vertical-align: baseline;
 padding-top:13px; 
   padding-right: 2px;
   
@@ -508,6 +515,7 @@ text-decoration: none;
 }
 .social_footer{
   padding-top:71px;
+  padding-bottom:60px;
 }
 .social_btn{
   float:left;
@@ -550,10 +558,11 @@ text-decoration: none;
   top:32px;
   left:27px;
   
-  width:50px;
-  height:50px;
+  background-image:url("../img/sprite.png");
+  background-position: -0px -46px;
   
-  background: transparent url("../img/vk-icon.png") no-repeat;
+  width:26px;
+  height:15px;
   
 }
 .social_btn a:nth-child(2)::before{
@@ -563,10 +572,11 @@ text-decoration: none;
   top:27px;
   left:35px;
   
-  width:50px;
-  height:50px;
+  width:12px;
+  height:22px;
   
-  background: transparent url("../img/fb-icon.png") no-repeat;
+  background-image: url("../img/sprite.png");
+  background-position: -15px -153px;
 }
 .social_btn a:nth-child(3)::before{
   content: "";
@@ -575,10 +585,11 @@ text-decoration: none;
   top:28px;
   left:29px;
   
-  width:50px;
-  height:50px;
+  width:21px;
+  height:21px;
   
-  background: transparent url("../img/insta-icon.png") no-repeat;
+  background-image:  url("../img/sprite.png");
+  background-position: -0px -132px;
 }
 
 .discount{
@@ -631,7 +642,8 @@ text-decoration: none;
   margin-right:10px;
   
   font-size:0;
-  background-image: url(../img/close-cross.png);
+  background-image: url(../img/sprite.png);
+  background-position: -0px -111px;
   opacity: 0.3;
   width:21px;
   height:21px;
@@ -671,16 +683,23 @@ text-decoration: none;
   color:#000000;
 }
 .form_element input{
-  width:356px;
+  width:344px;
   padding: 13px 0;
+  padding-left:13px;
   
   border: 2px solid #d7dcde;
+  
+  outline: none;
 
 }
 .form_element textarea{
-  width:754px;
+  width:746px;
+  padding-top:12px;
+  padding-left:8px;
   
   border: 2px solid #d7dcde;
+  
+  outline: none;
 }
 .form_element input:hover{
   border: 2px solid #b4b9bb;
@@ -709,7 +728,7 @@ text-decoration: none;
   clear:both;
   
   width:260px;
-  margin-top:43px;
+  margin-top:49px;
   padding-top:17px;
 }
 input[type="text"]::-webkit-input-placeholder{
@@ -845,7 +864,8 @@ input[type="radio"]{
   position: absolute;
   
   content: "";
-  background: url(../img/radio-off.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -0px -61px;
   opacity:0.4;
   width:25px;
   height:25px;
@@ -860,7 +880,8 @@ input[type="radio"]:checked+label::before{
   position: absolute;
   
   content: "";
-  background: url(../img/radio-on.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -0px -86px;
   width:25px;
   height:25px;
   
@@ -887,9 +908,10 @@ input[type="checkbox"]{
   position: absolute;
   
   content: "";
-  background: url(../img/checkbox-off.png) no-repeat;
-  width:25px;
-  height:25px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -0px -0px;
+  width:27px;
+  height:23px;
   
   top:15px;
   left:2px;
@@ -905,9 +927,10 @@ input[type="checkbox"]:checked+label::before{
   position: absolute;
   
   content: "";
-  background: url(../img/checkbox-on.png) no-repeat;
-  width:25px;
-  height:25px;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -0px -23px;
+  width:27px;
+  height:23px;
   
   top:15px;
   left:2px;
@@ -917,7 +940,18 @@ input[type="checkbox"]:checked+label::before{
   
 background-color: #eeeeee;
   color:#000000;
+  
+  outline: none;
 }
+.settings_btn:hover{
+ background-color:#dfdfdf; 
+}
+.settings_btn:active{
+  
+ color:rgba(0, 0, 0, 0.3);
+ background-color:#dfdfdf; 
+}
+
 .gallery{
   float: right;
   width:760px;
@@ -950,6 +984,7 @@ background-color: #eeeeee;
   font-size: 14px;
   line-height:18px;
   text-transform: uppercase;
+  vertical-align: baseline;
   
   color:#000000;
   opacity: 0.3;
@@ -974,7 +1009,8 @@ background-color: #eeeeee;
   width:9px;
   height:9px;
    
-  background: url(../img/sort-down.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -0px -168px;
   right: 5px;
   top: 8px; 
 }
@@ -987,7 +1023,8 @@ background-color: #eeeeee;
   width:9px;
   height:9px;
    
-  background: url(../img/sort-up.png) no-repeat;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -9px -175px;
   right: 2px;
   top: 8px;
   
@@ -1006,6 +1043,8 @@ background-color: #eeeeee;
   min-height:615px;
   margin-right:40px;
   margin-bottom: 38px;
+  
+  box-shadow: 0 5px 22px 0 #ccc; 
 }
 
 
@@ -1079,6 +1118,7 @@ text-align: center;
 }
 .selector_pages_btn{
   display:inline-block;
+  vertical-align: baseline;
   margin-right: 12px;
   margin-top: 0;
   
@@ -1158,7 +1198,7 @@ text-align: center;
 
 
 
-/*------*/
+/*
 div, article, header, footer, section, a, p, nav {
 outline: 1px solid red;
-}
+}*/
