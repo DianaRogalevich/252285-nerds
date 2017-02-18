@@ -980,12 +980,15 @@ input[type=checkbox]:checked+label::before {
     width: 360px;
     min-height: 615px;
     margin-right: 40px;
-    margin-bottom: 38px;
-    box-shadow: 0 5px 22px 0 #ccc
+    margin-bottom: 38px
 }
 
 .gallery_item:nth-child(2n) {
     margin-right: 0
+}
+
+.gallery_item:hover{
+  box-shadow: 0 5px 22px 0 #ccc
 }
 
 .buy_block a,.gallery_item:hover .buy_block {
